@@ -30,6 +30,10 @@ export const FormContainer = styled.div`
     font-weight: bold;
 
     flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
 `;
 
 export const CountdownContainer = styled.div`
@@ -47,6 +51,16 @@ export const CountdownContainer = styled.div`
 
         border-radius: 8px;
     }
+
+    @media (max-width: 768px) {
+        font-size: 4rem;
+        line-height: 3rem;
+        gap: 0.5rem;
+
+        span {
+            padding: 1rem 0.5rem;
+        }
+    }
 `;
 
 export const Separator = styled.div`
@@ -59,6 +73,10 @@ export const Separator = styled.div`
 
     display: flex;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        width: 2rem;
+    }
 `;
 
 export const StartCountdownButton = styled.button`
@@ -117,6 +135,10 @@ const baseInput = styled.input`
 
 export const TaskInput = styled(baseInput)`
     flex: 1;
+
+    &::-webkit-calendar-picker-indicator {
+        display: none !important;
+    }
 `;
 
 export const MinutesAmountInput = styled(baseInput)`
