@@ -9,11 +9,14 @@
     "start": "NODE_ENV=production bun src/index.tsx"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
     "phosphor-react": "^1.4.1",
     "react": "^19",
     "react-dom": "^19",
+    "react-hook-form": "^7.63.0",
     "react-router-dom": "^7.9.1",
-    "styled-components": "^6.1.19"
+    "styled-components": "^6.1.19",
+    "zod": "^4.1.11"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
