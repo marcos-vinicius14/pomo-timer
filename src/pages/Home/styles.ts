@@ -17,67 +17,8 @@ export const HomeContainer = styled.main`
     }
 `;
 
-export const FormContainer = styled.div`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
 
-    color: ${(props) => props.theme["gray-100"]};
 
-    font-size: 1.125rem;
-    font-weight: bold;
-
-    flex-wrap: wrap;
-
-    @media (max-width: 768px) {
-        font-size: 1rem;
-    }
-`;
-
-export const CountdownContainer = styled.div`
-    font-family: 'Roboto Mono', monospace;
-    font-size: 10rem;
-    line-height: 8rem;
-    color: ${(props) => props.theme["gray-100"]};
-
-    display: flex;
-    gap: 1rem;
-
-    span {
-        background: ${(props) => props.theme["gray-700"]};
-        padding: 2rem 1rem;
-
-        border-radius: 8px;
-    }
-
-    @media (max-width: 768px) {
-        font-size: 4rem;
-        line-height: 3rem;
-        gap: 0.5rem;
-
-        span {
-            padding: 1rem 0.5rem;
-        }
-    }
-`;
-
-export const Separator = styled.div`
-    padding: 2rem 0;
-    color: ${(props) => props.theme["green-700"]};
-
-    width: 4rem;
-
-    overflow: hidden;
-
-    display: flex;
-    justify-content: center;
-
-    @media (max-width: 768px) {
-        width: 2rem;
-    }
-`;
 
 export const BaseCountdownButton = styled.button`
     width: 100%;
@@ -100,43 +41,6 @@ export const BaseCountdownButton = styled.button`
     }
 `;
 
-
-
-const baseInput = styled.input`
-    background: transparent;
-    border: 0;
-    height: 2.5rem;
-    border-bottom: 2px solid ${props => props.theme["gray-500"]};
-
-    font-weight: bold;
-    font-size: inherit;
-
-    padding: 0 0.5rem;
-
-    color: ${props => props.theme["gray-100"]};
-
-    &:focus {
-        box-shadow: none;
-        border-color: ${props => props.theme["gray-500"]};
-    }
-
-    &::placeholder {
-        color: ${props => props.theme["gray-500"]};
-    }
-`;
-
-
-export const TaskInput = styled(baseInput)`
-    flex: 1;
-
-    &::-webkit-calendar-picker-indicator {
-        display: none !important;
-    }
-`;
-
-export const MinutesAmountInput = styled(baseInput)`
-    width: 4rem;
-`;
 
 
 export const StartCountdownButton = styled(BaseCountdownButton)`
